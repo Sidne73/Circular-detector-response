@@ -1,0 +1,8 @@
+# Normalise text files to LF inside the repository, so the archived content is
+# byte-identical regardless of the platform a contributor commits from. Without
+# this, regenerating the data files on Windows (where Python writes CRLF) makes
+# every table in data/ appear modified.
+* text=auto
+
+*.pdf binary
+*.png binary
