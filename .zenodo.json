@@ -1,0 +1,33 @@
+{
+  "title": "Circular-detector response: code, numerical data, error budget, figure, and symbolic verification notebook",
+  "description": "Version 1.0.0 of the complete reproduction package for the circular-detector response reported in Field quantization in rotating frames: coordinate covariance and the circular-detector response. Contains the figure-generation code, the plotted data, the numerical error budget, and a notebook with symbolic derivations and numerical consistency checks of the manuscript's equations.",
+  "creators": [
+    {
+      "name": "Natzuka Junior, Sidney",
+      "affiliation": "Instituto de Física Teórica, Universidade Estadual Paulista (UNESP)",
+      "orcid": "0009-0003-4756-6108"
+    },
+    {
+      "name": "Zarro, Carlos Augusto Domingues",
+      "affiliation": "Instituto de Física, Universidade Federal do Rio de Janeiro",
+      "orcid": "0000-0002-4357-5168"
+    },
+    {
+      "name": "Soares, Matheus dos Santos",
+      "affiliation": "Centro Brasileiro de Pesquisas Físicas",
+      "orcid": "0000-0001-5000-952X"
+    }
+  ],
+  "version": "1.0.0",
+  "publication_date": "2026-09-03",
+  "upload_type": "software",
+  "access_right": "open",
+  "license": "bsd-3-clause",
+  "keywords": [
+    "quantum field theory",
+    "rotating detector",
+    "Unruh-DeWitt detector",
+    "Wightman function",
+    "numerical reproducibility"
+  ]
+}

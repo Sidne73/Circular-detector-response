@@ -1,0 +1,21 @@
+# Exact direct and transitive Python dependencies used to generate the
+# version 1.0.0 archived artifacts under CPython 3.11.9 (Windows x86-64).
+#
+# Reproduce with:
+#   python -m venv .venv
+#   .venv/Scripts/python -m pip install --requirement requirements-lock.txt   (Windows)
+#   .venv/bin/python     -m pip install --requirement requirements-lock.txt   (Linux/macOS)
+contourpy==1.3.3
+cycler==0.12.1
+fonttools==4.64.0
+kiwisolver==1.5.1
+matplotlib==3.10.0
+mpmath==1.3.0
+numpy==2.4.6
+packaging==26.3
+pillow==12.3.0
+pyparsing==3.3.2
+python-dateutil==2.9.0.post0
+scipy==1.15.1
+six==1.17.0
+sympy==1.13.1

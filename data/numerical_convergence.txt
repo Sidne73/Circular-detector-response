@@ -1,0 +1,45 @@
+Circular detector response: publication numerical error budget
+
+package version: 1.0.0
+
+1. Complete plotted-grid refinement
+production: {'cutoff': 800.0, 'panel_width': 1.0, 'order': 24}
+reference:  {'cutoff': 1200.0, 'panel_width': 0.75, 'order': 32}
+points checked: 297
+maximum absolute difference: 1.212074e-12
+maximum absolute-difference location: v=0.85, E/a_c=0.12
+maximum relative difference: 1.580451e-07
+maximum relative-difference location: v=0.85, E/a_c=4.00
+smallest reference rate: 5.127729e-08
+
+2. Conservative cutoff convergence and tail bound
+cutoffs: 100, 200, 400, 800, 1600
+observed order range: 2.952879 to 3.027267
+maximum absolute tail bound: 6.886838e-11
+tail bound relative to smallest plotted rate: 1.343058e-03
+
+3. Independent adaptive QUADPACK Fourier check
+integrand: unsplit stable subtracted integrand on [0, infinity)
+points checked: 5
+maximum absolute difference: 1.505258e-12
+maximum relative difference: 9.992515e-08
+maximum QUADPACK absolute error estimate: 3.999877e-14
+
+4. Independent mode-sum cross-check, Eq. (94) against Eq. (110)
+mode-sum parameters: {'modes': 300, 'angular_order': 96}
+points checked: 297
+maximum absolute difference: 1.505195e-12
+maximum absolute-difference location: v=0.85, E/a_c=0.08
+maximum relative difference: 1.000271e-07
+mode-sum truncation (coarse vs fine): 1.283695e-16
+
+5. Software environment
+package_version: 1.0.0
+python: 3.11.9
+python_implementation: CPython
+numpy: 2.4.6
+scipy: 1.15.1
+matplotlib: 3.10.0
+platform: Windows-10-10.0.26200-SP0
+
+All publication acceptance checks passed.

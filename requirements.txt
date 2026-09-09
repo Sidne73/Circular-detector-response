@@ -1,0 +1,8 @@
+# Compatible ranges for the production calculation (Figure 1 + error budget).
+numpy>=2.0,<3
+scipy>=1.14,<2
+matplotlib>=3.9,<4
+
+# Symbolic and arbitrary-precision verification (verification/ notebook).
+sympy>=1.13,<2
+mpmath>=1.3,<2

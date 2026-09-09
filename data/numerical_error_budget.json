@@ -1,0 +1,150 @@
+{
+  "cutoff_convergence_and_tail_bound": {
+    "cutoffs": [
+      100.0,
+      200.0,
+      400.0,
+      800.0,
+      1600.0
+    ],
+    "energy_over_a_c": 0.0,
+    "maximum_absolute_tail_bound": 6.886837623924678e-11,
+    "maximum_observed_order": 3.0272673222133393,
+    "maximum_tail_bound_relative_to_smallest_plotted_rate": 0.0013430579827627069,
+    "minimum_observed_order": 2.9528792718344232,
+    "tail_bounds_at_production_cutoff": [
+      {
+        "absolute_bound": 1.0686219181772148e-12,
+        "speed": 0.3
+      },
+      {
+        "absolute_bound": 1.7097971379264527e-11,
+        "speed": 0.6
+      },
+      {
+        "absolute_bound": 6.886837623924678e-11,
+        "speed": 0.85
+      }
+    ]
+  },
+  "full_grid_refinement": {
+    "maximum_absolute_difference": 1.2120738440701828e-12,
+    "maximum_absolute_difference_location": {
+      "energy_over_a_c": 0.12,
+      "speed": 0.85
+    },
+    "maximum_relative_difference": 1.5804514830827742e-07,
+    "maximum_relative_difference_location": {
+      "energy_over_a_c": 4.0,
+      "speed": 0.85
+    },
+    "point_count": 297,
+    "smallest_reference_rate_over_a_c": 5.127729191377326e-08
+  },
+  "independent_quadpack_check": {
+    "maximum_absolute_difference": 1.505257724021547e-12,
+    "maximum_absolute_difference_location": {
+      "energy_over_a_c": 0.08,
+      "speed": 0.85
+    },
+    "maximum_quadpack_absolute_error_estimate": 3.999877475053308e-14,
+    "maximum_relative_difference": 9.992515040645064e-08,
+    "maximum_relative_difference_location": {
+      "energy_over_a_c": 4.0,
+      "speed": 0.85
+    },
+    "point_count": 5
+  },
+  "mode_sum_cross_check": {
+    "maximum_absolute_difference": 1.5051952739764118e-12,
+    "maximum_absolute_difference_location": {
+      "energy_over_a_c": 0.08,
+      "speed": 0.85
+    },
+    "maximum_mode_sum_truncation": 1.2836953722228372e-16,
+    "maximum_relative_difference": 1.0002708159916202e-07,
+    "maximum_relative_difference_location": {
+      "energy_over_a_c": 4.0,
+      "speed": 0.85
+    },
+    "mode_sum_parameters": {
+      "angular_order": 96,
+      "modes": 300
+    },
+    "mode_sum_truncation": [
+      {
+        "coarse": {
+          "angular_order": 96,
+          "modes": 300
+        },
+        "fine": {
+          "angular_order": 160,
+          "modes": 600
+        },
+        "maximum_absolute_difference": 1.3877787807814457e-17,
+        "maximum_relative_difference": 4.030838131205668e-15,
+        "speed": 0.3
+      },
+      {
+        "coarse": {
+          "angular_order": 96,
+          "modes": 300
+        },
+        "fine": {
+          "angular_order": 160,
+          "modes": 600
+        },
+        "maximum_absolute_difference": 4.163336342344337e-17,
+        "maximum_relative_difference": 1.1251590179360744e-14,
+        "speed": 0.6
+      },
+      {
+        "coarse": {
+          "angular_order": 96,
+          "modes": 300
+        },
+        "fine": {
+          "angular_order": 160,
+          "modes": 600
+        },
+        "maximum_absolute_difference": 1.2836953722228372e-16,
+        "maximum_relative_difference": 5.820252419458568e-14,
+        "speed": 0.85
+      }
+    ],
+    "point_count": 297
+  },
+  "numerical_parameters": {
+    "independent_epsabs": 2e-14,
+    "independent_limit": 500,
+    "independent_limlst": 500,
+    "independent_max_error_estimate": 1e-12,
+    "mode_sum": {
+      "angular_order": 96,
+      "modes": 300
+    },
+    "mode_sum_fine": {
+      "angular_order": 160,
+      "modes": 600
+    },
+    "production": {
+      "cutoff": 800.0,
+      "order": 24,
+      "panel_width": 1.0
+    },
+    "reference": {
+      "cutoff": 1200.0,
+      "order": 32,
+      "panel_width": 0.75
+    }
+  },
+  "software_environment": {
+    "matplotlib": "3.10.0",
+    "numpy": "2.4.6",
+    "package_version": "1.0.0",
+    "platform": "Windows-10-10.0.26200-SP0",
+    "python": "3.11.9",
+    "python_implementation": "CPython",
+    "scipy": "1.15.1"
+  }
+}
