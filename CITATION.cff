@@ -33,12 +33,17 @@ authors:
       Rio de Janeiro, RJ, Brazil
 repository-code: 'https://github.com/Sidne73/Circular-detector-response'
 url: 'https://github.com/Sidne73/Circular-detector-response'
-# TODO before submission: after archiving the tagged release v1.0.0 on Zenodo,
-# record the version DOI here by uncommenting and filling in:
-#   identifiers:
-#     - type: doi
-#       value: '<version DOI issued by the archive>'
-#       description: Archived version of this release
+identifiers:
+  - type: doi
+    value: '10.5281/zenodo.22678696'
+    description: >-
+      Archived version 1.0.0 of this release. This is the DOI the accompanying
+      manuscript cites, because it resolves to the exact code that produced the
+      published numbers.
+  - type: doi
+    value: '10.5281/zenodo.22678695'
+    description: >-
+      Concept DOI, which always resolves to the most recent archived version.
 keywords:
   - quantum field theory
   - rotating detector

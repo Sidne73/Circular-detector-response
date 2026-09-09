@@ -1,6 +1,7 @@
 # Circular-detector response: reproducibility package
 
 [![License: BSD-3-Clause](https://img.shields.io/badge/License-BSD--3--Clause-blue.svg)](LICENSE)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.22678695.svg)](https://doi.org/10.5281/zenodo.22678695)
 
 Version 1.0.0 of the code, numerical data, error budget, figure, and
 symbolic verification notebook associated
