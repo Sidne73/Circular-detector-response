@@ -31,10 +31,10 @@ authors:
     affiliation: >-
       Centro Brasileiro de Pesquisas Físicas,
       Rio de Janeiro, RJ, Brazil
-# TODO before release: add the public repository once it exists, e.g.
-#   repository-code: 'https://github.com/<owner>/<repo>'
-#   url: 'https://github.com/<owner>/<repo>'
-# and, after archiving the tagged release, the version DOI:
+repository-code: 'https://github.com/Sidne73/Circular-detector-response'
+url: 'https://github.com/Sidne73/Circular-detector-response'
+# TODO before submission: after archiving the tagged release v1.0.0 on Zenodo,
+# record the version DOI here by uncommenting and filling in:
 #   identifiers:
 #     - type: doi
 #       value: '<version DOI issued by the archive>'
