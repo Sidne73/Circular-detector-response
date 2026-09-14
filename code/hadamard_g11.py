@@ -120,9 +120,14 @@ def _p_ratio(x: np.ndarray) -> np.ndarray:
     accurate because the numerator no longer cancels.
     """
 
-    x = np.asarray(x, dtype=float)
+    # P is even in x, and evaluating it at |x| makes that exact rather than
+    # only mathematical.  The direct branch squares np.sin(x), and a vectorised
+    # sin is not guaranteed to satisfy sin(-x) == -sin(x) to the last bit:
+    # NumPy picks a SIMD kernel from the host's CPU features, so P(x) and P(-x)
+    # could differ by one ULP on some machines and not on others.
+    x = np.abs(np.asarray(x, dtype=float))
     x2 = x * x
-    small = np.abs(x) < SERIES_THRESHOLD
+    small = x < SERIES_THRESHOLD
     series = (
         1.0 / 3.0
         - x2 * (
@@ -158,9 +163,10 @@ def _x2_minus_sin2(x: np.ndarray) -> np.ndarray:
     budget of Appendix E that it was supposed to sit below.
     """
 
-    x = np.asarray(x, dtype=float)
+    # Even in x; see the note in _p_ratio on why |x| is taken here.
+    x = np.abs(np.asarray(x, dtype=float))
     x2 = x * x
-    small = np.abs(x) < SERIES_THRESHOLD
+    small = x < SERIES_THRESHOLD
     series = x2 * x2 * (
         1.0 / 3.0
         - x2 * (
