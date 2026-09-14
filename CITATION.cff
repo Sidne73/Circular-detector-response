@@ -50,3 +50,24 @@ keywords:
   - Unruh-DeWitt detector
   - Wightman function
   - numerical reproducibility
+references:
+  - type: article
+    title: >-
+      Field quantization in rotating frames: coordinate covariance and the
+      circular-detector response
+    authors:
+      - given-names: Sidney
+        family-names: Natzuka Junior
+      - given-names: Carlos Augusto Domingues
+        family-names: Zarro
+      - given-names: Matheus dos Santos
+        family-names: Soares
+    year: 2026
+    identifiers:
+      - type: other
+        value: 'arXiv:2609.10390'
+        description: arXiv preprint, gr-qc
+    url: 'https://arxiv.org/abs/2609.10390'
+    notes: >-
+      The manuscript this package accompanies. Cite this software for the code
+      and numerical data; cite the manuscript for the physics.

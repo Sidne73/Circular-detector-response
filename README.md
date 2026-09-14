@@ -2,12 +2,14 @@
 
 [![License: BSD-3-Clause](https://img.shields.io/badge/License-BSD--3--Clause-blue.svg)](LICENSE)
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.22678695.svg)](https://doi.org/10.5281/zenodo.22678695)
+[![arXiv](https://img.shields.io/badge/arXiv-2609.10390-b31b1b.svg)](https://arxiv.org/abs/2609.10390)
 
 Version 1.0.0 of the code, numerical data, error budget, figure, and
 symbolic verification notebook associated
 with the manuscript *Field quantization in rotating frames: coordinate
 covariance and the circular-detector response* by Sidney Natzuka Junior,
-Carlos Augusto Domingues Zarro, and Matheus dos Santos Soares.
+Carlos Augusto Domingues Zarro, and Matheus dos Santos Soares,
+[arXiv:2609.10390](https://arxiv.org/abs/2609.10390) [gr-qc].
 
 The archive reproduces Figure 1 and every numerical-accuracy statement in the
 manuscript's final appendix. No external input data are required; the software

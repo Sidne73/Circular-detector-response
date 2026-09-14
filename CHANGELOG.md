@@ -5,7 +5,8 @@ All notable changes to this reproduction package are documented here.
 ## 1.0.0 - 2026-09-03
 
 First public release, accompanying *Field quantization in rotating frames:
-coordinate covariance and the circular-detector response*.
+coordinate covariance and the circular-detector response*,
+[arXiv:2609.10390](https://arxiv.org/abs/2609.10390) [gr-qc].
 
 Contents:
 
