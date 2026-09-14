@@ -92,6 +92,31 @@ def _require_nonempty(paths: list[Path]) -> None:
             raise AssertionError(f"missing or empty output: {path}")
 
 
+def _top_level_block(text: str, key: str) -> str:
+    """Return the indented body of a top-level YAML key.
+
+    CITATION.cff carries author lists in more than one place: the software's
+    own `authors`, and the `authors` of each work under `references`. Counting
+    a field across the whole file would conflate them, so callers slice out the
+    block they mean first.
+    """
+    lines = text.splitlines()
+    start = None
+    for index, line in enumerate(lines):
+        if line.startswith(f"{key}:"):
+            start = index
+            break
+    if start is None:
+        raise AssertionError(f"CITATION.cff has no top-level '{key}' key")
+
+    body: list[str] = []
+    for line in lines[start + 1:]:
+        if line and not line[0].isspace():
+            break
+        body.append(line)
+    return "\n".join(body)
+
+
 def validate_release_metadata() -> None:
     """Check that the archive contains internally consistent release metadata."""
 
@@ -119,7 +144,7 @@ def validate_release_metadata() -> None:
         raise AssertionError("CITATION.cff package version is inconsistent")
     if "symbolic verification notebook" not in citation:
         raise AssertionError("CITATION.cff title omits the verification notebook")
-    if citation.count("family-names:") != 3:
+    if _top_level_block(citation, "authors").count("family-names:") != 3:
         raise AssertionError("CITATION.cff must list exactly three authors")
     if "license: BSD-3-Clause" not in citation:
         raise AssertionError("CITATION.cff license is inconsistent")
